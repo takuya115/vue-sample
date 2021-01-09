@@ -2,7 +2,8 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <SVGRect :posX="X" :posY="Y" />
+    <button @click="switchAnimation">{{btnMsg}}</button>
+    <SVGRect :onAnimation="onAnimation" />
   </div>
 </template>
 
@@ -19,7 +20,20 @@ export default {
     return {
       X: 0,
       Y: 0,
+      start: null,
+      animationId: null,
+      onAnimation: false,
     }
+  },
+  methods: {
+    switchAnimation() {
+      this.onAnimation = !this.onAnimation;
+    },
+  },
+  computed: {
+    btnMsg() {
+      return this.onAnimation ? '停止' : '開始'
+    },
   }
 }
 </script>
