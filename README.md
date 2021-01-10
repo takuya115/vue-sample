@@ -1,4 +1,7 @@
-# animation
+# vue-sample
+Vue.jsサンプル
+* storeパターン
+* requestAnimationFrame()
 
 ## Project setup
 ```
