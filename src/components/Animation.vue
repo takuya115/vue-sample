@@ -14,7 +14,7 @@
 <script>
 
 export default {
-    name: 'SVGRect',
+    name: 'Animation',
     // props: ['posX', 'posY'],
     props: {
         onAnimation: {

@@ -18,7 +18,7 @@ import Vue from 'vue';
 Vue.observable(store);
 
 export default {
-    name: 'Sample',
+    name: 'StoreSample',
     data() {
         return {
             idx: 0,

@@ -3,18 +3,18 @@
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <button @click="switchAnimation">{{btnMsg}}</button>
-    <SVGRect :onAnimation="onAnimation" />
+    <Animation :onAnimation="onAnimation" />
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import SVGRect from './components/SVGRect.vue'
+import Animation from './components/Animation.vue'
 
 export default {
   name: 'App',
   components: {
-    SVGRect,
+    Animation,
   },
   data() {
     return {
