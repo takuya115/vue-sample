@@ -2,19 +2,22 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <button @click="switchAnimation">{{btnMsg}}</button>
-    <Animation :onAnimation="onAnimation" />
+    <!-- <button @click="switchAnimation">{{btnMsg}}</button>
+    <Animation :onAnimation="onAnimation" /> -->
+    <SvgSample />
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Animation from './components/Animation.vue'
+// import Animation from './components/Animation.vue'
+import SvgSample from './components/SvgSample.vue'
 
 export default {
   name: 'App',
   components: {
-    Animation,
+    // Animation,
+    SvgSample
   },
   data() {
     return {
